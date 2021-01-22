@@ -1,16 +1,18 @@
 package com.work.passionlifeplugin;
 
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class ChildPluginMainActivity extends Activity {
+import com.qihoo360.replugin.loader.a.PluginActivity;
+
+public class ChildPluginMainActivity extends PluginActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main_child);
         findViewById(R.id.test_plugin).setOnClickListener(new View.OnClickListener() {
             @Override
